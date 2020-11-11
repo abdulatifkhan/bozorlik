@@ -19,8 +19,6 @@ elShoppingListForm.addEventListener('submit', function (evt) {
 });
 
 // Check list
-
-
 var elCheckList = document.querySelector('.check-list-form');
 var elCheckInput = document.querySelector('.check-list-input');
 
@@ -28,11 +26,12 @@ elCheckList.addEventListener('submit', function(evt) {
   evt.preventDefault();
 
   // var key = ;
-  elCheckInput.value = '';
   if(list.includes(elCheckInput.value.trim())) {
     alert("Ha mavjud");
   } else {
     alert("Ro'hatda yo'q");
   }
-}) 
+
+  elCheckInput.value = '';
+});
 
